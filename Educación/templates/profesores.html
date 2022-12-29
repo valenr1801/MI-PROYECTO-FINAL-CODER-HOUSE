@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block contenido %}
+{% for profesor in lista_profesores %}
+<ul>
+    <li> Nombre profesor: {{profesor.nombre}}, Facultad donde dicta clases: {{profesor.facultad}}, Hace cuantos años da clases: {{profesor.tiempo}}
+        <a href='actualizar/{{id}}'>Actualizar</a>
+    </li>
+</ul>
+{% endfor %}
+{%endblock %}
+
+{% block titulo%}
+Lista de todos los profesores
+{% endblock %}

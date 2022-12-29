@@ -1,0 +1,12 @@
+{% extends 'Educación_dos/base.html' %}
+
+{% block contenido %}
+    <h1>{{object.titulo}}</h1>
+    <h1>{{object.subtitulo}}</h1> 
+    <div>
+        <img src="{{object.imagen.url}}">
+    </div>
+    <div>{{object.texto}}</div> 
+    <div>{{object.publicado_el}}</div>
+
+{% endblock %}

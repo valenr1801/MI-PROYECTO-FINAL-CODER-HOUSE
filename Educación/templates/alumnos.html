@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block contenido %}
+{% for alumno in lista_alumnos %}
+<ul>
+    <li> Nombre alumno: {{alumno.nombre}}, Facultad donde estudia: {{alumno.facultad}}, Edad: {{alumno.edad}}
+        <a href='actualizar/{{id}}'>Actualizar</a>
+    </li>
+</ul>
+{% endfor %}
+{%endblock %}
+
+{% block titulo%}
+Lista de todos los alumnos
+{% endblock %}

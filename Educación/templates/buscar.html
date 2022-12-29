@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block titulo%} Buscar carreras por nombre {% endblock %}
+{% block contenido %}
+  
+  <form action="/carreras/buscar" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Buscar">
+  </form>
+
+  {% for carrera in lista_carreras %}
+      <ul>
+          <li> Nombre carrera: {{carrera.nombre}}, Facultad donde se dicta: {{carrera.facultad}}, Duración de la carrera: {{carrera.duracion}}</li>
+      </ul>
+  {% endfor %}
+{% endblock %}

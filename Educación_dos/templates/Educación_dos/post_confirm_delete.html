@@ -1,0 +1,10 @@
+{% extends 'Educación_dos/base.html' %}
+
+{% block contenido %}
+<form method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    "¿ Quieres borrar el post?"
+    <input type="submit" value="Borrar">
+</form>
+{% endblock %}

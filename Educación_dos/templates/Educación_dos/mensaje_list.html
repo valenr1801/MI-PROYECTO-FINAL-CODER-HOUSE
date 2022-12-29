@@ -1,0 +1,15 @@
+{% extends 'Educación_dos/base.html' %}
+
+{% block contenido %}
+
+<ul>
+{% for mensaje in object_list %}
+   <li>
+       {{Mensaje.enviado_el}} - - {{Mensaje.email}}  - - {{Mensaje.nombre}}
+      
+           <a href="{% url 'Mensaje-detalle' mensaje.id %}">Ver</a>
+      
+   </li>
+{% endfor %}
+</ul>
+{% endblock %}

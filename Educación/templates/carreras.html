@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block contenido %}
+{% for carrera in lista_carreras %}
+<ul>
+    <li> Nombre carrera: {{carrera.nombre}}, Facultad donde se dicta: {{carrera.facultad}}, Duración de la carrera: {{carrera.duracion}}
+        <a href='actualizar/{{id}}'>Actualizar</a>
+    </li>
+</ul>
+{% endfor %}
+{%endblock %}
+
+{% block titulo%}
+Lista de todas las carreras
+{% endblock %}

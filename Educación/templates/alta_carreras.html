@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block titulo%} Alta de una nueva carrera{% endblock %}
+{% block contenido %}
+  
+  <form action="/carreras/alta" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Alta">
+  </form>
+
+  <h2 style="color:rgb(203, 98, 255)">{{msg_exito}}</h2>
+
+{% endblock %}
