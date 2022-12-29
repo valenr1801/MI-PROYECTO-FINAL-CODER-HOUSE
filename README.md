@@ -86,3 +86,6 @@ Listo ya tenes corriendo el ejemplo.
 Ahora Hace click en el siguiente link para ver el ejemplo corriendo:
 
 http://localhost:8000/
+
+
+VIDEO YOUTUBE LINK: https://youtu.be/A7nEfdOxP0U
